@@ -1,3 +1,6 @@
+body {
+  font-family: 'Raleway';
+}
 /**
  * Global Reset of all HTML Elements
  *
@@ -124,20 +127,6 @@ a img {
 :focus {
   outline: 0;
 }
-@font-face {
-  font-family: 'EB Garamond';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/ebgaramond/v13/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI96.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
-}
 h1,
 h2,
 h3,
@@ -145,8 +134,11 @@ h4 {
   font-family: 'EB Garamond';
   letter-spacing: 0.2rem;
 }
-body {
-  font-family: 'Raleway';
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 1.6rem;
 }
 a {
   color: #07080a;
@@ -176,9 +168,23 @@ header .header-container {
   width: 100%;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 header .header-container h1 {
   font-size: 5rem;
+  color: #07080a;
+}
+header .header-container .teamLink {
+  color: #dad5be;
+  background-color: #07080a;
+  border: 3px solid #07080a;
+  border-radius: 7px;
+  padding: 12px 40px;
+  text-transform: uppercase;
+}
+header .header-container .teamLink:hover {
+  cursor: pointer;
+  background-color: transparent;
   color: #07080a;
 }
 header nav {
@@ -196,6 +202,15 @@ header nav ul {
 header nav ul li {
   padding: 0 20px;
   color: #07080a;
+}
+header nav ul li a {
+  font-size: 0.8rem;
+}
+header nav ul li a.teamLink {
+  background-color: #07080a;
+  color: #dad5be;
+  padding: 14px;
+  border-radius: 5px;
 }
 .main-content {
   margin: 0 auto;
@@ -230,7 +245,6 @@ header nav ul li {
 }
 .main-content .missionStatement h3 {
   color: #07080a;
-  font-size: 2.6rem;
   position: absolute;
   opacity: 0.9;
 }
@@ -241,10 +255,13 @@ header nav ul li {
 .main-content .testimonials {
   padding: 120px 10%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .main-content .testimonials .testimonialsCard {
-  width: 21%;
+  padding: 30px 15px;
+  max-width: 23%;
+  min-width: 340px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -253,12 +270,22 @@ header nav ul li {
 .main-content .testimonials .testimonialsCard .imageWrapper {
   display: flex;
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 240px;
+  height: 240px;
   overflow: hidden;
   margin-bottom: 30px;
 }
 .main-content .testimonials .testimonialsCard .imageWrapper img {
   align-self: center;
   width: 100%;
+}
+.main-content .cta {
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 20px;
+}
+footer {
+  padding: 90px;
+  background-color: #b6be1b;
+  opacity: 0.4;
 }

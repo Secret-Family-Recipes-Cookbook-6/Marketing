@@ -5,7 +5,6 @@ header {
 	align-items: center;
 	img {
 		width: 100%;
-		// opacity: 0.89;
 		margin-top: -20px;
 	}
 	.header-container {
@@ -15,9 +14,23 @@ header {
 		width: 100%;
 		justify-content: center;
 		align-items: center;
+		flex-direction: column;
 		h1 {
 			font-size: 5rem;
 			color: @black;
+		}
+		.teamLink {
+			color: @white;
+			background-color: @black;
+			border: 3px solid @black;
+			border-radius: 7px;
+			padding: 12px 40px;
+			text-transform: uppercase;
+			&:hover {
+				cursor: pointer;
+				background-color: transparent;
+				color: @black;
+			}
 		}
 	}
 	nav {
@@ -33,6 +46,15 @@ header {
 			li {
 				padding: 0 20px;
 				color: @black;
+				a {
+					font-size: 0.8rem;
+					&.teamLink {
+						background-color: @black;
+						color: @white;
+						padding: 14px;
+						border-radius: 5px;
+					}
+				}
 			}
 		}
 	}

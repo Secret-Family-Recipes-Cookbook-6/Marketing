@@ -32,7 +32,6 @@
 		justify-content: center;
 		h3 {
 			color: @black;
-			font-size: 2.6rem;
 			position: absolute;
 			opacity: 0.9;
 		}
@@ -41,12 +40,16 @@
 			z-index: -9;
 		}
 	}
+
 	.testimonials {
 		padding: 120px 10%;
 		display: flex;
-		justify-content: space-between;
+		justify-content: center;
+		flex-wrap: wrap;
 		.testimonialsCard {
-			width: 21%;
+			padding: 30px 15px;
+			max-width: 23%;
+			min-width: 340px;
 			text-align: center;
 			display: flex;
 			flex-direction: column;
@@ -54,8 +57,8 @@
 			.imageWrapper {
 				display: flex;
 				border-radius: 50%;
-				width: 300px;
-				height: 300px;
+				width: 240px;
+				height: 240px;
 				overflow: hidden;
 				margin-bottom: 30px;
 				img {
@@ -64,5 +67,11 @@
 				}
 			}
 		}
+	}
+
+	.cta {
+		flex-direction: column;
+		align-items: center;
+		padding: 120px 20px;
 	}
 }
