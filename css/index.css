@@ -124,3 +124,115 @@ a img {
 :focus {
   outline: 0;
 }
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/ebgaramond/v13/SlGDmQSNjdsmc35JDF1K5E55YMjF_7DPuGi-6_RkBI96.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ISg.ttf) format('truetype');
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'EB Garamond';
+}
+body {
+  font-family: 'Raleway';
+}
+a {
+  color: #07080a;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+a:hover {
+  color: #a41d1a;
+}
+section {
+  display: flex;
+}
+header {
+  display: flex;
+  max-height: 700px;
+  overflow: hidden;
+  align-items: center;
+}
+header img {
+  width: 100%;
+  margin-top: -20px;
+}
+header .header-container {
+  position: absolute;
+  display: flex;
+  height: inherit;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+header .header-container h1 {
+  font-size: 5rem;
+  color: #07080a;
+}
+header nav {
+  position: absolute;
+  display: flex;
+  top: 0;
+  width: 100%;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  padding: 20px;
+  list-style-type: none;
+}
+header nav ul li {
+  padding: 0 20px;
+  color: #07080a;
+}
+.main-content {
+  margin: 0 auto;
+}
+.main-content .feature {
+  display: flex;
+  padding: 130px 10%;
+  text-align: center;
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -15px;
+  }
+}
+.main-content .feature .featuresCard img {
+  position: relative;
+  max-height: 300px;
+}
+.main-content .feature .featuresCard img:hover {
+  animation: bounce 500ms alternate infinite;
+}
+.main-content .missionStatement {
+  display: flex;
+  max-height: 500px;
+  height: 500px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.main-content .missionStatement h3 {
+  color: #07080a;
+  font-size: 2.3rem;
+  position: absolute;
+}
+.main-content .missionStatement img {
+  width: 100%;
+  z-index: -9;
+}
