@@ -143,6 +143,7 @@ h2,
 h3,
 h4 {
   font-family: 'EB Garamond';
+  letter-spacing: 0.2rem;
 }
 body {
   font-family: 'Raleway';
@@ -201,7 +202,7 @@ header nav ul li {
 }
 .main-content .feature {
   display: flex;
-  padding: 130px 10%;
+  padding: 150px 10%;
   text-align: center;
 }
 @keyframes bounce {
@@ -229,10 +230,35 @@ header nav ul li {
 }
 .main-content .missionStatement h3 {
   color: #07080a;
-  font-size: 2.3rem;
+  font-size: 2.6rem;
   position: absolute;
+  opacity: 0.9;
 }
 .main-content .missionStatement img {
   width: 100%;
   z-index: -9;
+}
+.main-content .testimonials {
+  padding: 120px 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.main-content .testimonials .testimonialsCard {
+  width: 21%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-content .testimonials .testimonialsCard .imageWrapper {
+  display: flex;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.main-content .testimonials .testimonialsCard .imageWrapper img {
+  align-self: center;
+  width: 100%;
 }
