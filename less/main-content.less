@@ -70,8 +70,53 @@
 	}
 
 	.cta {
+		background-color: #e6f0f2;
 		flex-direction: column;
 		align-items: center;
 		padding: 120px 20px;
+		.teamLink {
+			&:hover {
+				cursor: pointer;
+			}
+		}
+	}
+	.aboutUs {
+		display: flex;
+		height: 100vh;
+		justify-content: space-around;
+		align-items: center;
+		padding: 90px 20px;
+		padding: 0 10%;
+		.aboutUsCard {
+			width: 18%;
+			h4 {
+				text-align: center;
+				span {
+					font-style: italic;
+				}
+			}
+			p {
+				padding: 10px;
+				&.teamRole {
+					text-align: center;
+					font-size: 1.1rem;
+					text-transform: uppercase;
+					font-style: italic;
+					margin-top: -10px;
+				}
+			}
+			.imgWrapper {
+				display: flex;
+				align-items: center;
+				margin: auto;
+				width: 250px;
+				height: 250px;
+				overflow: hidden;
+				border-radius: 50%;
+				img {
+					width: 100%;
+				}
+			}
+		}
 	}
 }
