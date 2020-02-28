@@ -1,10 +1,19 @@
 .aboutUs {
+	@keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	padding: 10% 5%;
 	flex-wrap: wrap;
+	animation: opacity 600ms ease-in;
 	.aboutHeader {
 		padding: 20px;
 	}

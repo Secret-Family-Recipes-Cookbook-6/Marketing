@@ -169,6 +169,7 @@ header {
   max-height: 700px;
   overflow: hidden;
   align-items: center;
+  animation: opacity 600ms linear;
 }
 @keyframes opacity {
   0% {
@@ -180,7 +181,6 @@ header {
 }
 header img {
   width: 100%;
-  animation: opacity 300ms linear;
 }
 header .header-container {
   position: absolute;
@@ -216,7 +216,16 @@ header nav ul li a {
   font-size: 0.8rem;
 }
 .main-content {
+  animation: opacity 600ms ease-in;
   margin: 0 auto;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .main-content .feature {
   display: flex;
@@ -357,6 +366,15 @@ header nav ul li a {
   align-items: center;
   padding: 10% 5%;
   flex-wrap: wrap;
+  animation: opacity 600ms ease-in;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .aboutUs .aboutHeader {
   padding: 20px;
