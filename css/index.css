@@ -220,7 +220,7 @@ header nav ul li a {
 }
 .main-content .feature {
   display: flex;
-  padding: 150px 10%;
+  padding: 10%;
   text-align: center;
   flex-wrap: no-wrap;
   justify-content: center;
@@ -233,10 +233,14 @@ header nav ul li a {
 }
 .main-content .feature .featuresCard {
   padding: 40px 10px;
-  width: 400px;
+  height: 400px;
+  width: 30%;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-@media (max-width: 1000px) {
+@media (max-width: 500px) {
   .main-content .feature .featuresCard {
     width: 90%;
     padding: 10px;
@@ -253,7 +257,7 @@ header nav ul li a {
 .main-content .feature .featuresCard img {
   position: relative;
   min-height: 200px;
-  height: 300px;
+  max-height: 300px;
 }
 @media (max-width: 1000px) {
   .main-content .feature .featuresCard img {
@@ -300,8 +304,6 @@ header nav ul li a {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 1000px) {
-}
 @media (max-width: 500px) {
   .main-content .testimonials .testimonialsCard {
     min-width: 90%;
@@ -324,6 +326,9 @@ header nav ul li a {
   flex-direction: column;
   align-items: center;
   padding: 120px 20px;
+}
+.main-content .cta .teamLink {
+  margin-top: 10px;
 }
 .aboutUs {
   display: flex;
