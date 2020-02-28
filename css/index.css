@@ -337,33 +337,40 @@ header nav ul li a {
 }
 .aboutUs {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10% 5%;
   flex-wrap: wrap;
 }
-.aboutUs .aboutUsCard {
+.aboutUs .aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.aboutUs .aboutContent .aboutUsCard {
   min-width: 300px;
   max-width: 350px;
   padding: 20px;
 }
-.aboutUs .aboutUsCard h4 {
+.aboutUs .aboutContent .aboutUsCard h4 {
   text-align: center;
 }
-.aboutUs .aboutUsCard h4 span {
+.aboutUs .aboutContent .aboutUsCard h4 span {
   font-style: italic;
 }
-.aboutUs .aboutUsCard p {
+.aboutUs .aboutContent .aboutUsCard p {
   padding: 10px;
 }
-.aboutUs .aboutUsCard p.teamRole {
+.aboutUs .aboutContent .aboutUsCard p.teamRole {
   text-align: center;
   font-size: 1.1rem;
   text-transform: uppercase;
   font-style: italic;
   margin-top: -10px;
 }
-.aboutUs .aboutUsCard .socialLinks {
+.aboutUs .aboutContent .aboutUsCard .socialLinks {
   position: absolute;
   display: flex;
   top: 0;
@@ -375,18 +382,18 @@ header nav ul li a {
   z-index: 9999;
   opacity: 0;
 }
-.aboutUs .aboutUsCard .socialLinks ul {
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul {
   display: flex;
 }
-.aboutUs .aboutUsCard .socialLinks ul li {
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul li {
   display: flex;
   padding: 9px;
   list-style-type: none;
 }
-.aboutUs .aboutUsCard .socialLinks ul li img {
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul li img {
   width: 30px;
 }
-.aboutUs .aboutUsCard .imgWrapper {
+.aboutUs .aboutContent .aboutUsCard .imgWrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -396,7 +403,7 @@ header nav ul li a {
   overflow: hidden;
   border-radius: 50%;
 }
-.aboutUs .aboutUsCard .imgWrapper img {
+.aboutUs .aboutContent .aboutUsCard .imgWrapper img {
   width: 100%;
 }
 footer {
