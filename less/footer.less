@@ -1,5 +1,42 @@
 footer {
-	padding: 90px;
 	color: @white;
 	background-color: @black;
+	font-size: 0.9rem;
+	.footerTop {
+		padding: 90px;
+		display: flex;
+		justify-content: space-around;
+		ul {
+			li {
+				line-height: 1.4rem;
+				list-style-type: none;
+				&:first-of-type {
+					padding-bottom: 7px;
+				}
+			}
+			a {
+				color: @white;
+			}
+		}
+		.copyright {
+			align-self: center;
+		}
+		.footerSocial {
+			align-self: center;
+			ul {
+				display: flex;
+				list-style-type: none;
+				li {
+					padding: 5px;
+					img {
+						width: 30px;
+					}
+				}
+			}
+		}
+	}
+	.footerBottom {
+		padding-bottom: 20px;
+		text-align: center;
+	}
 }

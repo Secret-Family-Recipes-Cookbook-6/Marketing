@@ -343,6 +343,9 @@ header nav ul li a {
   padding: 10% 5%;
   flex-wrap: wrap;
 }
+.aboutUs .aboutHeader {
+  padding: 20px;
+}
 .aboutUs .aboutContent {
   display: flex;
   justify-content: center;
@@ -407,7 +410,42 @@ header nav ul li a {
   width: 100%;
 }
 footer {
-  padding: 90px;
   color: #dad5be;
   background-color: #07080a;
+  font-size: 0.9rem;
+}
+footer .footerTop {
+  padding: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footerTop ul li {
+  line-height: 1.4rem;
+  list-style-type: none;
+}
+footer .footerTop ul li:first-of-type {
+  padding-bottom: 7px;
+}
+footer .footerTop ul a {
+  color: #dad5be;
+}
+footer .footerTop .copyright {
+  align-self: center;
+}
+footer .footerTop .footerSocial {
+  align-self: center;
+}
+footer .footerTop .footerSocial ul {
+  display: flex;
+  list-style-type: none;
+}
+footer .footerTop .footerSocial ul li {
+  padding: 5px;
+}
+footer .footerTop .footerSocial ul li img {
+  width: 30px;
+}
+footer .footerBottom {
+  padding-bottom: 20px;
+  text-align: center;
 }
