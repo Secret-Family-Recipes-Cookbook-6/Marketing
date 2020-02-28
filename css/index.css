@@ -223,7 +223,11 @@ header nav ul li a {
   padding: 10%;
   text-align: center;
   flex-wrap: no-wrap;
-  justify-content: center;
+}
+.main-content .feature .imgWrapper {
+  display: flex;
+  min-width: 200px;
+  height: 300px;
 }
 @media (max-width: 1000px) {
   .main-content .feature {
@@ -256,13 +260,7 @@ header nav ul li a {
 }
 .main-content .feature .featuresCard img {
   position: relative;
-  min-height: 200px;
-  max-height: 300px;
-}
-@media (max-width: 1000px) {
-  .main-content .feature .featuresCard img {
-    height: 60%;
-  }
+  width: 100%;
 }
 .main-content .feature .featuresCard img:hover {
   animation: bounce 500ms alternate infinite;
@@ -277,6 +275,7 @@ header nav ul li a {
 }
 .main-content .missionStatement h3 {
   color: #07080a;
+  padding: 0 10%;
   position: absolute;
   opacity: 0.9;
 }
@@ -325,7 +324,13 @@ header nav ul li a {
   background-color: #e6f0f2;
   flex-direction: column;
   align-items: center;
-  padding: 120px 20px;
+  padding: 120px 10%;
+}
+@media (max-width: 500px) {
+  .main-content .cta h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
 }
 .main-content .cta .teamLink {
   margin-top: 10px;
@@ -396,5 +401,6 @@ header nav ul li a {
 }
 footer {
   padding: 90px;
+  color: #dad5be;
   background-color: #07080a;
 }
