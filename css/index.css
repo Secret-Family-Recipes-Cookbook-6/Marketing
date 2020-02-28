@@ -170,8 +170,17 @@ header {
   overflow: hidden;
   align-items: center;
 }
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 header img {
   width: 100%;
+  animation: opacity 300ms linear;
 }
 header .header-container {
   position: absolute;
@@ -213,9 +222,13 @@ header nav ul li a {
   display: flex;
   padding: 150px 10%;
   text-align: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 .main-content .feature .featuresCard {
-  width: 33%;
+  padding: 40px;
+  width: 400px;
+  min-width: 300px;
 }
 @keyframes bounce {
   0% {
@@ -227,7 +240,8 @@ header nav ul li a {
 }
 .main-content .feature .featuresCard img {
   position: relative;
-  max-height: 300px;
+  max-height: 400px;
+  min-height: 400px;
 }
 .main-content .feature .featuresCard img:hover {
   animation: bounce 500ms alternate infinite;
@@ -252,7 +266,7 @@ header nav ul li a {
 .main-content .testimonials {
   padding: 120px 10%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 .main-content .testimonials .testimonialsCard {
@@ -284,14 +298,15 @@ header nav ul li a {
 }
 .aboutUs {
   display: flex;
-  height: 100vh;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  padding: 90px 20px;
-  padding: 0 10%;
+  padding: 10% 5%;
+  flex-wrap: wrap;
 }
 .aboutUs .aboutUsCard {
-  width: 18%;
+  min-width: 300px;
+  max-width: 350px;
+  padding: 20px;
 }
 .aboutUs .aboutUsCard h4 {
   text-align: center;

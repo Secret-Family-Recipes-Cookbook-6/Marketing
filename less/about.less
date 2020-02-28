@@ -1,12 +1,13 @@
 .aboutUs {
 	display: flex;
-	height: 100vh;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
-	padding: 90px 20px;
-	padding: 0 10%;
+	padding: 10% 5%;
+	flex-wrap: wrap;
 	.aboutUsCard {
-		width: 18%;
+		min-width: 300px;
+		max-width: 350px;
+		padding: 20px;
 		h4 {
 			text-align: center;
 			span {
@@ -34,14 +35,12 @@
 			background-color: rgba(31, 25, 25, 0.794);
 			z-index: 9999;
 			opacity: 0;
-
 			ul {
 				display: flex;
 				li {
 					display: flex;
 					padding: 9px;
 					list-style-type: none;
-
 					img {
 						width: 30px;
 					}

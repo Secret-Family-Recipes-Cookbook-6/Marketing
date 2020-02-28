@@ -3,8 +3,17 @@ header {
 	max-height: 700px;
 	overflow: hidden;
 	align-items: center;
+	@keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	img {
 		width: 100%;
+		animation: opacity 300ms linear;
 	}
 	.header-container {
 		position: absolute;
