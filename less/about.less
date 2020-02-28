@@ -1,0 +1,65 @@
+.aboutUs {
+	display: flex;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
+	padding: 90px 20px;
+	padding: 0 10%;
+	.aboutUsCard {
+		width: 18%;
+		h4 {
+			text-align: center;
+			span {
+				font-style: italic;
+			}
+		}
+		p {
+			padding: 10px;
+			&.teamRole {
+				text-align: center;
+				font-size: 1.1rem;
+				text-transform: uppercase;
+				font-style: italic;
+				margin-top: -10px;
+			}
+		}
+		.socialLinks {
+			position: absolute;
+			display: flex;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			align-items: center;
+			justify-content: center;
+			background-color: rgba(31, 25, 25, 0.794);
+			z-index: 9999;
+			opacity: 0;
+
+			ul {
+				display: flex;
+				li {
+					display: flex;
+					padding: 9px;
+					list-style-type: none;
+
+					img {
+						width: 30px;
+					}
+				}
+			}
+		}
+		.imgWrapper {
+			position: relative;
+			display: flex;
+			align-items: center;
+			margin: auto;
+			width: 250px;
+			height: 250px;
+			overflow: hidden;
+			border-radius: 50%;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
