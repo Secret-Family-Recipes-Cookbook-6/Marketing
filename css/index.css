@@ -222,13 +222,25 @@ header nav ul li a {
   display: flex;
   padding: 150px 10%;
   text-align: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-wrap: no-wrap;
+  justify-content: center;
+}
+@media (max-width: 1000px) {
+  .main-content .feature {
+    flex-wrap: wrap;
+    padding: 90px 10%;
+  }
 }
 .main-content .feature .featuresCard {
-  padding: 40px;
+  padding: 40px 10px;
   width: 400px;
-  min-width: 300px;
+  min-width: 200px;
+}
+@media (max-width: 1000px) {
+  .main-content .feature .featuresCard {
+    width: 90%;
+    padding: 10px;
+  }
 }
 @keyframes bounce {
   0% {
@@ -240,8 +252,13 @@ header nav ul li a {
 }
 .main-content .feature .featuresCard img {
   position: relative;
-  max-height: 400px;
-  min-height: 400px;
+  min-height: 200px;
+  height: 300px;
+}
+@media (max-width: 1000px) {
+  .main-content .feature .featuresCard img {
+    height: 60%;
+  }
 }
 .main-content .feature .featuresCard img:hover {
   animation: bounce 500ms alternate infinite;
@@ -264,7 +281,7 @@ header nav ul li a {
   z-index: -9;
 }
 .main-content .testimonials {
-  padding: 120px 10%;
+  padding: 120px 5%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -272,7 +289,7 @@ header nav ul li a {
 .main-content .testimonials .testimonialsCard {
   padding: 30px 15px;
   max-width: 23%;
-  min-width: 340px;
+  min-width: 280px;
   text-align: center;
   display: flex;
   flex-direction: column;

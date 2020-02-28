@@ -5,12 +5,21 @@
 		display: flex;
 		padding: 150px 10%;
 		text-align: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
+		flex-wrap: no-wrap;
+		justify-content: center;
+		@media (max-width: 1000px) {
+			flex-wrap: wrap;
+			padding: 90px 10%;
+		}
+
 		.featuresCard {
-			padding: 40px;
+			padding: 40px 10px;
 			width: 400px;
-			min-width: 300px;
+			min-width: 200px;
+			@media (max-width: 1000px) {
+				width: 90%;
+				padding: 10px;
+			}
 			@keyframes bounce {
 				0% {
 					top: 0px;
@@ -21,8 +30,11 @@
 			}
 			img {
 				position: relative;
-				max-height: 400px;
-				min-height: 400px;
+				min-height: 200px;
+				height: 300px;
+				@media (max-width: 1000px) {
+					height: 60%;
+				}
 				&:hover {
 					animation: bounce 500ms alternate infinite;
 				}
@@ -48,14 +60,14 @@
 	}
 
 	.testimonials {
-		padding: 120px 10%;
+		padding: 120px 5%;
 		display: flex;
 		justify-content: space-around;
 		flex-wrap: wrap;
 		.testimonialsCard {
 			padding: 30px 15px;
 			max-width: 23%;
-			min-width: 340px;
+			min-width: 280px;
 			text-align: center;
 			display: flex;
 			flex-direction: column;
