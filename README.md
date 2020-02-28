@@ -15,7 +15,7 @@ Robin Warden  //
 
 **Backend**
 
-Chris Vasquez
+Chris Vasquez //
 [Twitter](https://) /
 [Github](https://) /
 [LinkedIn](https://) /
@@ -23,21 +23,21 @@ Chris Vasquez
 
 **Frontend**
 
-Kristi Gribble
+Kristi Gribble //
 [Twitter](https://twitter.com/GribbleKristi) /
 [Github](https://github.com/Rrawla2) /
 [LinkedIn](https://www.linkedin.com/in/kristi-gribble) /
 [Portfolio](https://rrawla2.github.io) /
 
-Alison Ludick
+Alison Ludick //
 [Twitter](https://twitter.com/alisonludick) /
 [Github](https://github.com/alisonludick) /
 [LinkedIn](https://www.linkedin.com/in/alisonludick) /
 
 **Marketing**
 
-Tiffany Arellano
+Tiffany Arellano //
 [Twitter](https://twitter.com/yiirano) /
-[Github](https://gihub.com/yirano) /
+[Github](https://github.com/yirano) /
 [LinkedIn](https://www.linkedin.com/in/yt-arellano) /
 [Portfolio](https://yirano.dev) /
