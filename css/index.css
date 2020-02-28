@@ -151,6 +151,19 @@ a:hover {
 section {
   display: flex;
 }
+.teamLink {
+  color: #dad5be;
+  background-color: #07080a;
+  border: 3px solid #07080a;
+  border-radius: 7px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+}
+.teamLink:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #07080a;
+}
 header {
   display: flex;
   max-height: 700px;
@@ -174,19 +187,6 @@ header .header-container h1 {
   font-size: 5rem;
   color: #07080a;
 }
-header .header-container .teamLink {
-  color: #dad5be;
-  background-color: #07080a;
-  border: 3px solid #07080a;
-  border-radius: 7px;
-  padding: 12px 40px;
-  text-transform: uppercase;
-}
-header .header-container .teamLink:hover {
-  cursor: pointer;
-  background-color: transparent;
-  color: #07080a;
-}
 header nav {
   position: absolute;
   display: flex;
@@ -205,12 +205,6 @@ header nav ul li {
 }
 header nav ul li a {
   font-size: 0.8rem;
-}
-header nav ul li a.teamLink {
-  background-color: #07080a;
-  color: #dad5be;
-  padding: 14px;
-  border-radius: 5px;
 }
 .main-content {
   margin: 0 auto;
@@ -284,9 +278,6 @@ header nav ul li a.teamLink {
   flex-direction: column;
   align-items: center;
   padding: 120px 20px;
-}
-.main-content .cta .teamLink:hover {
-  cursor: pointer;
 }
 .main-content .aboutUs {
   display: flex;
