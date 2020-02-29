@@ -1,30 +1,19 @@
+@import 'mixins';
+
+@keyframes opacity {
+	.opacity(0, 1);
+}
 .aboutUs {
-	@keyframes opacity {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	.flex(column, wrap, center, center);
 	padding: 10% 5%;
-	flex-wrap: wrap;
 	animation: opacity 600ms ease-in;
 	.aboutHeader {
 		padding: 20px;
 	}
 	.aboutContent {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		.flex(row, wrap, center, center);
 		.aboutUsCard {
-			min-width: 300px;
-			max-width: 350px;
+			.minWidth-maxWidth(300px, 350px);
 			padding: 20px;
 			h4 {
 				text-align: center;
@@ -43,13 +32,10 @@
 				}
 			}
 			.socialLinks {
+				.flex(row, no-wrap, center, center);
+				.width-height(100%, 100%);
 				position: absolute;
-				display: flex;
 				top: 0;
-				width: 100%;
-				height: 100%;
-				align-items: center;
-				justify-content: center;
 				background-color: rgba(31, 25, 25, 0.794);
 				z-index: 9999;
 				opacity: 0;
@@ -66,12 +52,10 @@
 				}
 			}
 			.imgWrapper {
+				.flex(row, no-wrap, center, center);
+				.width-height(@width:250px, @height:250px);
 				position: relative;
-				display: flex;
-				align-items: center;
 				margin: auto;
-				width: 250px;
-				height: 250px;
 				overflow: hidden;
 				border-radius: 50%;
 				img {
