@@ -34,10 +34,10 @@
 			height: 400px;
 			width: 30%;
 			min-width: 200px;
-			@media (max-width: 800px) {
+			@media @tablet {
 				width: 45%;
 			}
-			@media (max-width: 500px) {
+			@media @phone {
 				width: 100%;
 			}
 			@keyframes bounce {
@@ -51,7 +51,7 @@
 			img {
 				position: relative;
 				width: 100%;
-				@media (max-width: 800px) {
+				@media @tablet {
 					width: 90%;
 				}
 				&:hover {
@@ -79,7 +79,7 @@
 	.testimonials {
 		.flex(row, wrap, space-around);
 		padding: 120px 5%;
-		@media (max-width: 1000px) {
+		@media @desktop {
 			padding: 0 5%;
 		}
 		.testimonialsCard {
@@ -87,7 +87,7 @@
 			.flex(column, wrap, flex-start, center);
 			padding: 30px 15px;
 			text-align: center;
-			@media (max-width: 500px) {
+			@media @phone {
 				min-width: 90%;
 			}
 			.imageWrapper {
@@ -110,7 +110,7 @@
 		align-items: center;
 		padding: 120px 10%;
 		h3 {
-			@media (max-width: 500px) {
+			@media @phone {
 				font-size: 2.2rem;
 				text-align: center;
 			}

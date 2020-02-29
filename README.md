@@ -8,18 +8,16 @@ Anyone can go out and buy a cookbook these days, but I want a place to store all
 **Project Leader**
 
 Robin Warden  //
-[Twitter](https://) /
-[Github](https://) /
-[LinkedIn](https://) /
-[Portfolio](https://) /
+[Twitter](https://twitter.com/Code4Blessings) /
+[Github](https://github.com/Code4Blessings) /
+[LinkedIn](https://www.linkedin.com/in/robin-warden-7126b054/) /
+[Portfolio](https://code4blessings.github.io/RobinWarden_Portfolio/) /
 
 **Backend**
 
 Chris Vasquez //
-[Twitter](https://) /
-[Github](https://) /
-[LinkedIn](https://) /
-[Portfolio](https://) /
+[Github](https://gitHub.com/chrvasq) /
+[LinkedIn](https://linkedin.com/in/chrvasq) /
 
 **Frontend**
 
