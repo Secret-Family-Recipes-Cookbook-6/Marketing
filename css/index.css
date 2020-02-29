@@ -191,10 +191,16 @@ header .header-container {
   position: absolute;
   width: 100%;
   height: inherit;
+  padding-top: 82px;
 }
 header .header-container h1 {
   font-size: 5rem;
   color: #07080a;
+}
+@media (max-width: 800px) {
+  header .header-container h1 {
+    font-size: 3rem;
+  }
 }
 header nav {
   position: absolute;
