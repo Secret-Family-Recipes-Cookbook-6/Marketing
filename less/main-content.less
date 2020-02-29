@@ -29,13 +29,14 @@
 		}
 
 		.featuresCard {
-			.flex(column, wrap, flex-end);
+			.width-height(30%, 400px);
+			flex-direction: column;
+			flex-wrap: wrap;
+			justify-content: flex-end;
 			padding: 40px 10px;
-			height: 400px;
-			width: 30%;
 			min-width: 200px;
 			@media @tablet {
-				width: 45%;
+				.minWidth-maxWidth(45%, 80%);
 			}
 			@media @phone {
 				width: 100%;

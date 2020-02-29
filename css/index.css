@@ -257,19 +257,18 @@ header nav ul li a {
   }
 }
 .main-content .feature .featuresCard {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-end;
+  width: 30%;
+  height: 400px;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-end;
   padding: 40px 10px;
-  height: 400px;
-  width: 30%;
   min-width: 200px;
 }
 @media (max-width: 800px) {
   .main-content .feature .featuresCard {
-    width: 45%;
+    min-width: 45%;
+    max-width: 80%;
   }
 }
 @media (max-width: 500px) {
