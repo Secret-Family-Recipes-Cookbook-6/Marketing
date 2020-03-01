@@ -1,7 +1,7 @@
 const socialLinks = document.querySelectorAll('.socialLinks');
 const aboutUsCard = document.querySelectorAll('.imgWrapper');
 const nav = document.querySelector('nav');
-const menuIcon = document.querySelector('.menu');
+const menuIcon = document.querySelector('.menuCheckbox');
 const menuBars = document.querySelectorAll('span');
 const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
@@ -10,11 +10,17 @@ if (window.innerWidth < 800) {
   nav.classList.add('hide');
 }
 window.addEventListener('resize', function () {
+  menuBars.forEach(x => {
+    x.classList.remove('checked');
+  })
+  menuIcon.checked = false;
+
 
   if (window.innerWidth < 800) {
-    nav.classList.add('hide');
+    nav.style.display = 'none';
   } else {
-    nav.classList.remove('hide');
+    nav.style.top = "0%";
+    nav.style.display = "flex";
   }
 })
 
@@ -31,14 +37,12 @@ menuIcon.addEventListener('change', function () {
     })
   }
 })
-console.log('hello');
+
 for (let i = 0; i < aboutUsCard.length; i++) {
   socialLinks[i].addEventListener('mouseenter', function () {
-    console.log(i);
     socialLinks[i].style = 'opacity: 1; transition: opacity 200ms linear';
   })
   socialLinks[i].addEventListener('mouseleave', function () {
-    console.log(i);
     socialLinks[i].style = 'opacity: 0; transition: opacity 200ms linear';
 
   })
