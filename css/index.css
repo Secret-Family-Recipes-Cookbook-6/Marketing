@@ -219,6 +219,11 @@ header nav {
     z-index: 9999;
   }
 }
+header nav h4 {
+  position: absolute;
+  left: 55px;
+  top: 14px;
+}
 header nav ul {
   display: flex;
   padding: 20px;
