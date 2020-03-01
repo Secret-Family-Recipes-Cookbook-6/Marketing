@@ -270,10 +270,16 @@ header .menuIcon {
   }
   header .menuIcon span {
     box-sizing: border-box;
-    margin: 10px 0;
+    position: relative;
     width: 100%;
     display: block;
     border: 1px solid #07080a;
+  }
+  header .menuIcon span:nth-child(1) {
+    top: 7px;
+  }
+  header .menuIcon span:nth-child(2) {
+    top: 20px;
   }
 }
 .main-content {

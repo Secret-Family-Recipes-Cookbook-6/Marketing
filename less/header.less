@@ -80,11 +80,17 @@ header {
 			}
 			span {
 				box-sizing: border-box;
-
-				margin: 10px 0;
+				position: relative;
+				// margin: 10px 0;
 				width: 100%;
 				display: block;
 				border: 1px solid @black;
+				&:nth-child(1) {
+					top: 7px;
+				}
+				&:nth-child(2) {
+					top: 20px;
+				}
 			}
 		}
 	}
