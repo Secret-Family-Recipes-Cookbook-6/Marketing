@@ -319,7 +319,7 @@ header .menuIcon {
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 10%;
+  padding: 5% 10%;
   text-align: center;
 }
 .main-content .feature .imgWrapper {
