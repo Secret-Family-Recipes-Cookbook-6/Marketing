@@ -6,9 +6,12 @@ const menuBars = document.querySelectorAll('span');
 const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
 
+// hide nav on tablet + phone view
 if (window.innerWidth < 800) {
   nav.classList.add('hide');
 }
+
+// toggle menuIcon + hide nav if window.width < 800
 window.addEventListener('resize', function () {
   menuBars.forEach(x => {
     x.classList.remove('checked');
@@ -24,6 +27,7 @@ window.addEventListener('resize', function () {
   }
 })
 
+// toggle nav menu items when menuIcon has been clicked
 menuIcon.addEventListener('change', function () {
   if (menuIcon.checked) {
     nav.style = "top: 0%; transition: all 300ms linear;"
@@ -38,6 +42,16 @@ menuIcon.addEventListener('change', function () {
   }
 })
 
+// scroll in testimonial when it's in view
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 1300) {
+    document.querySelectorAll('.testimonialsCard').forEach(x => {
+      x.style = 'top: 0; opacity: 1; transition: all 600ms ease-in;';
+    })
+  }
+})
+
+// display professional profile links on team image hover
 for (let i = 0; i < aboutUsCard.length; i++) {
   socialLinks[i].addEventListener('mouseenter', function () {
     socialLinks[i].style = 'opacity: 1; transition: opacity 200ms linear';
@@ -47,5 +61,7 @@ for (let i = 0; i < aboutUsCard.length; i++) {
 
   })
 }
+
+
 
 
