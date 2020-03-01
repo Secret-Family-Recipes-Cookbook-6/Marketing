@@ -27,15 +27,16 @@ section {
 }
 
 .teamLink {
-	color: @white;
-	background-color: @black;
 	border: 3px solid @black;
 	border-radius: 7px;
 	padding: 10px 40px;
 	text-transform: uppercase;
+	.backgroundColor-color(@black, @white);
+	transition: all 200ms linear;
+
 	&:hover {
 		cursor: pointer;
-		background-color: transparent;
-		color: @black;
+		.backgroundColor-color(transparent, @black);
+		transition: all 200ms linear;
 	}
 }

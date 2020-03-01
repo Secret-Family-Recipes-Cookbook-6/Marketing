@@ -152,17 +152,19 @@ section {
   display: flex;
 }
 .teamLink {
-  color: #dad5be;
-  background-color: #07080a;
   border: 3px solid #07080a;
   border-radius: 7px;
   padding: 10px 40px;
   text-transform: uppercase;
+  background: #07080a;
+  color: #dad5be;
+  transition: all 200ms linear;
 }
 .teamLink:hover {
   cursor: pointer;
-  background-color: transparent;
+  background: transparent;
   color: #07080a;
+  transition: all 200ms linear;
 }
 @keyframes opacity {
   from {

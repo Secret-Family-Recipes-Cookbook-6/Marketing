@@ -44,9 +44,9 @@ menuIcon.addEventListener('change', function () {
 
 // scroll in testimonial when it's in view
 window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 1300) {
+  if (window.pageYOffset > 1200) {
     document.querySelectorAll('.testimonialsCard').forEach(x => {
-      x.style = 'top: 0; opacity: 1; transition: all 600ms ease-in;';
+      x.style = 'top: 0; opacity: 1; transition: all 600ms ease-in-out;';
     })
   }
 })
