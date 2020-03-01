@@ -216,6 +216,7 @@ header nav {
   header nav {
     top: -100%;
     height: 100%;
+    z-index: 9999;
   }
 }
 header nav ul {
@@ -255,7 +256,7 @@ header .menuIcon {
     position: absolute;
     top: 20px;
     right: 20px;
-    z-index: 9999;
+    z-index: 99999;
   }
   header .menuIcon input[type='checkbox'] {
     position: absolute;
