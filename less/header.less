@@ -58,6 +58,7 @@ header {
 			}
 		}
 	}
+
 	.menuIcon {
 		display: none;
 		width: 40px;
@@ -81,15 +82,29 @@ header {
 			span {
 				box-sizing: border-box;
 				position: relative;
-				// margin: 10px 0;
 				width: 100%;
 				display: block;
 				border: 1px solid @black;
+
 				&:nth-child(1) {
 					top: 7px;
+					transition: transform 100ms linear;
 				}
 				&:nth-child(2) {
 					top: 20px;
+					transition: transform 100ms linear;
+				}
+				&.checked {
+					&:nth-child(1) {
+						transform: rotate(45deg);
+						top: 13px;
+						transition: transform 100ms linear;
+					}
+					&:nth-child(2) {
+						transform: rotate(135deg);
+						top: 10px;
+						transition: transform 100ms linear;
+					}
 				}
 			}
 		}

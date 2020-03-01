@@ -277,9 +277,21 @@ header .menuIcon {
   }
   header .menuIcon span:nth-child(1) {
     top: 7px;
+    transition: transform 100ms linear;
   }
   header .menuIcon span:nth-child(2) {
     top: 20px;
+    transition: transform 100ms linear;
+  }
+  header .menuIcon span.checked:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+    transition: transform 100ms linear;
+  }
+  header .menuIcon span.checked:nth-child(2) {
+    transform: rotate(135deg);
+    top: 10px;
+    transition: transform 100ms linear;
   }
 }
 .main-content {
