@@ -46,7 +46,7 @@ menuIcon.addEventListener('change', function () {
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > 1200) {
     document.querySelectorAll('.testimonialsCard').forEach(x => {
-      x.style = 'top: 0; opacity: 1; transition: all 600ms ease-in-out;';
+      x.style = 'top: 0; opacity: 1; transition: all 500ms ease-in-out;';
     })
   }
 })
