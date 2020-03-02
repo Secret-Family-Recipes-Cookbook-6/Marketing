@@ -5,8 +5,7 @@ const menuIcon = document.querySelector('.menuCheckbox');
 const menuBars = document.querySelectorAll('span');
 const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
-
-console.log(window.location.pathname);
+const reviewCard = document.querySelectorAll('.testimonialsCard');
 
 // hide nav on tablet + phone view
 if (window.innerWidth < 800) {
@@ -19,7 +18,6 @@ window.addEventListener('resize', function () {
     x.classList.remove('checked');
   })
   menuIcon.checked = false;
-
 
   if (window.innerWidth < 800) {
     nav.style.display = 'none';
@@ -46,7 +44,6 @@ menuIcon.addEventListener('change', function () {
 
 // scroll in testimonial when it's in view
 window.addEventListener('scroll', function () {
-  const reviewCard = document.querySelectorAll('.testimonialsCard');
   if (window.pageYOffset > 1000) {
     let ct = 100;
     reviewCard.forEach(x => {
