@@ -366,6 +366,9 @@ header .menuIcon {
     top: -15px;
   }
 }
+.main-content .feature .featuresCard p {
+  font-size: 1.2rem;
+}
 .main-content .feature .featuresCard img {
   position: relative;
   width: 100%;
