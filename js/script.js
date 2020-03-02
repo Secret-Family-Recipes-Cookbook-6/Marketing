@@ -52,8 +52,10 @@ window.addEventListener('scroll', function () {
   }
 })
 
+console.log(window.location.pathname);
 // Disable this event listener on index.html
 if (window.location.pathname === '/about.html') {
+
   // display professional profile links on team image hover
   for (let i = 0; i < aboutUsCard.length; i++) {
     socialLinks[i].addEventListener('mouseenter', function () {
