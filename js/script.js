@@ -6,6 +6,7 @@ const menuBars = document.querySelectorAll('span');
 const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
 const reviewCard = document.querySelectorAll('.testimonialsCard');
+const testimonials = document.querySelector('.testimonials');
 
 // hide nav on tablet + phone view
 if (window.innerWidth < 800) {
