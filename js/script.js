@@ -6,6 +6,8 @@ const menuBars = document.querySelectorAll('span');
 const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
 
+console.log(window.location.pathname);
+
 // hide nav on tablet + phone view
 if (window.innerWidth < 800) {
   nav.classList.add('hide');
@@ -53,15 +55,17 @@ window.addEventListener('scroll', function () {
   }
 })
 
-// display professional profile links on team image hover
-for (let i = 0; i < aboutUsCard.length; i++) {
-  socialLinks[i].addEventListener('mouseenter', function () {
-    socialLinks[i].style = 'opacity: 1; transition: opacity 200ms linear';
-  })
-  socialLinks[i].addEventListener('mouseleave', function () {
-    socialLinks[i].style = 'opacity: 0; transition: opacity 200ms linear';
-
-  })
+// Disable this event listener on index.html
+if (window.location.pathname === '/about.html') {
+  // display professional profile links on team image hover
+  for (let i = 0; i < aboutUsCard.length; i++) {
+    socialLinks[i].addEventListener('mouseenter', function () {
+      socialLinks[i].style = 'opacity: 1; transition: opacity 200ms linear';
+    })
+    socialLinks[i].addEventListener('mouseleave', function () {
+      socialLinks[i].style = 'opacity: 0; transition: opacity 200ms linear';
+    })
+  }
 }
 
 
