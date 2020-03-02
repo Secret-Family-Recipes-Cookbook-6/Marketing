@@ -44,9 +44,11 @@ menuIcon.addEventListener('change', function () {
 
 // scroll in testimonial when it's in view
 window.addEventListener('scroll', function () {
+  const reviewCard = document.querySelectorAll('.testimonialsCard');
   if (window.pageYOffset > 1000) {
-    document.querySelectorAll('.testimonialsCard').forEach(x => {
-      x.style = 'top: 0; opacity: 1; transition: all 500ms ease-in-out;';
+    let ct = 100;
+    reviewCard.forEach(x => {
+      x.style = `top: 0; opacity: 1; transition: all 500ms ease-in-out; transition-delay: ${ct += 100}ms`;
     })
   }
 })
