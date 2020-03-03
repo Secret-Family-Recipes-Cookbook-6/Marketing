@@ -510,6 +510,7 @@ header .menuIcon {
 .aboutUs .aboutContent .aboutUsCard {
   min-width: 300px;
   max-width: 350px;
+  height: 500px;
   padding: 20px;
 }
 .aboutUs .aboutContent .aboutUsCard h4 {
