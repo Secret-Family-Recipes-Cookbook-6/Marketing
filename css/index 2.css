@@ -1,0 +1,612 @@
+body {
+  font-family: 'Raleway';
+}
+/**
+ * Global Reset of all HTML Elements
+ *
+ * Resetting all of our HTML Elements ensures a smoother
+ * visual transition between browsers. If you don't believe me,
+ * try temporarily commenting out this block of code, then go
+ * and look at Mozilla versus Safari, both good browsers with
+ * a good implementation of CSS. The thing is, all browser CSS
+ * defaults are different and at the end of the day if visual
+ * consistency is what we're shooting for, then we need to
+ * make sure we're resetting all spacing elements.
+ *
+ */
+html,
+body {
+  border: 0;
+  font-family: "Helvetica-Neue", "Helvetica", Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cit,
+code,
+del,
+dfn,
+em,
+ins,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+b,
+i,
+hr,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+legend,
+label {
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle;
+}
+a img {
+  border: 0;
+}
+:focus {
+  outline: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'EB Garamond';
+  letter-spacing: 0.2rem;
+}
+h3 {
+  font-size: 2.6rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+a {
+  color: #07080a;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+a:hover {
+  color: #a41d1a;
+}
+section {
+  display: flex;
+}
+.teamLink {
+  border: 3px solid #07080a;
+  border-radius: 7px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background: #07080a;
+  color: #dad5be;
+  transition: all 200ms linear;
+}
+.teamLink:hover {
+  cursor: pointer;
+  background: transparent;
+  color: #07080a;
+  transition: all 200ms linear;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+header {
+  display: flex;
+  max-height: 700px;
+  overflow: hidden;
+  align-items: center;
+  animation: opacity 600ms linear;
+}
+header img {
+  width: 100%;
+}
+header .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: absolute;
+  width: 100%;
+  height: inherit;
+}
+header .header-container h1 {
+  font-size: 5rem;
+  color: #07080a;
+}
+@media (max-width: 800px) {
+  header .header-container h1 {
+    font-size: 3rem;
+  }
+}
+header nav {
+  position: absolute;
+  background-color: #fff;
+  top: 0%;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+  header nav {
+    top: -100%;
+    height: 100%;
+    z-index: 9999;
+  }
+}
+header nav h4 {
+  position: absolute;
+  left: 55px;
+  top: 14px;
+}
+header nav ul {
+  display: flex;
+  padding: 20px;
+  list-style-type: none;
+}
+@media (max-width: 800px) {
+  header nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}
+header nav ul li {
+  padding: 0 20px;
+  color: #07080a;
+}
+@media (max-width: 800px) {
+  header nav ul li {
+    padding: 10px;
+  }
+}
+header nav ul li a {
+  font-size: 0.8rem;
+}
+header .menuIcon {
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+@media (max-width: 800px) {
+  header .menuIcon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99999;
+  }
+  header .menuIcon input[type='checkbox'] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 99999;
+  }
+  header .menuIcon span {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    display: block;
+    border: 1px solid #07080a;
+  }
+  header .menuIcon span:nth-child(1) {
+    top: 7px;
+    transition: transform 100ms linear;
+  }
+  header .menuIcon span:nth-child(2) {
+    top: 20px;
+    transition: transform 100ms linear;
+  }
+  header .menuIcon span.checked:nth-child(1) {
+    transform: rotate(45deg);
+    top: 13px;
+    transition: transform 100ms linear;
+  }
+  header .menuIcon span.checked:nth-child(2) {
+    transform: rotate(135deg);
+    top: 10px;
+    transition: transform 100ms linear;
+  }
+}
+.main-content {
+  animation: opacity 600ms ease-in;
+  margin: 0 auto;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.main-content .feature {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5% 10%;
+  text-align: center;
+}
+.main-content .feature .imgWrapper {
+  display: flex;
+  min-width: 200px;
+  height: 300px;
+}
+@media (max-width: 1000px) {
+  .main-content .feature {
+    flex-wrap: wrap;
+    padding: 90px 10%;
+  }
+}
+@media (max-width: 800px) {
+  .main-content .feature {
+    justify-content: center;
+  }
+}
+.main-content .feature .featuresCard {
+  width: 30%;
+  height: 400px;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 40px 10px;
+  min-width: 200px;
+}
+@media (max-width: 800px) {
+  .main-content .feature .featuresCard {
+    min-width: 45%;
+    max-width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .main-content .feature .featuresCard {
+    width: 100%;
+  }
+}
+@keyframes bounce {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: -15px;
+  }
+}
+.main-content .feature .featuresCard p {
+  font-size: 1.2rem;
+}
+.main-content .feature .featuresCard img {
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .main-content .feature .featuresCard img {
+    width: 90%;
+  }
+}
+.main-content .feature .featuresCard img:hover {
+  animation: bounce 500ms alternate infinite;
+}
+.main-content .missionStatement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  max-height: 500px;
+  height: 500px;
+  overflow: hidden;
+}
+.main-content .missionStatement h3 {
+  color: #07080a;
+  padding: 0 10%;
+  position: absolute;
+  opacity: 0.9;
+}
+@media (max-width: 500px) {
+  .main-content .missionStatement h3 {
+    font-size: 1.7rem;
+    text-align: center;
+  }
+}
+.main-content .missionStatement .videoWrapper {
+  z-index: -9;
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.main-content .missionStatement .videoWrapper video {
+  width: 100%;
+  z-index: -9;
+  opacity: 0.7;
+}
+.main-content .missionStatement img {
+  width: 100%;
+  z-index: -9;
+}
+.main-content .testimonials {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 120px 5%;
+}
+@media (max-width: 1000px) {
+  .main-content .testimonials {
+    padding: 0 5%;
+  }
+}
+.main-content .testimonials .testimonialsCard {
+  min-width: 283px;
+  max-width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px 15px;
+  text-align: center;
+  opacity: 0;
+  position: relative;
+  top: 500px;
+}
+@media (max-width: 500px) {
+  .main-content .testimonials .testimonialsCard {
+    min-width: 90%;
+  }
+}
+.main-content .testimonials .testimonialsCard .imageWrapper {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.main-content .testimonials .testimonialsCard .imageWrapper img {
+  align-self: center;
+  width: 100%;
+}
+.main-content .cta {
+  background-color: #e6f0f2;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 10%;
+}
+@media (max-width: 500px) {
+  .main-content .cta h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+}
+.main-content .cta .teamLink {
+  margin-top: 10px;
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.aboutUs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10% 5%;
+  animation: opacity 600ms ease-in;
+}
+.aboutUs .aboutHeader {
+  padding: 20px;
+}
+.aboutUs .aboutContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.aboutUs .aboutContent .aboutUsCard {
+  min-width: 300px;
+  max-width: 350px;
+  height: 500px;
+  padding: 20px;
+}
+.aboutUs .aboutContent .aboutUsCard h4 {
+  text-align: center;
+}
+.aboutUs .aboutContent .aboutUsCard h4 span {
+  font-style: italic;
+}
+.aboutUs .aboutContent .aboutUsCard p {
+  padding: 10px;
+}
+.aboutUs .aboutContent .aboutUsCard p.teamRole {
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: -10px;
+}
+.aboutUs .aboutContent .aboutUsCard .socialLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(31, 25, 25, 0.794);
+  z-index: 999;
+  opacity: 0;
+}
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul {
+  display: flex;
+}
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul li {
+  display: flex;
+  padding: 9px;
+  list-style-type: none;
+}
+.aboutUs .aboutContent .aboutUsCard .socialLinks ul li img {
+  width: 30px;
+}
+.aboutUs .aboutContent .aboutUsCard .imgWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.aboutUs .aboutContent .aboutUsCard .imgWrapper img {
+  width: 100%;
+}
+footer {
+  color: #dad5be;
+  background-color: #07080a;
+  font-size: 0.9rem;
+}
+footer .footerTop {
+  padding: 90px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .footerTop ul li {
+  line-height: 1.4rem;
+  list-style-type: none;
+}
+footer .footerTop ul li:first-of-type {
+  padding-bottom: 7px;
+}
+footer .footerTop ul a {
+  color: #dad5be;
+}
+footer .footerTop .copyright {
+  align-self: center;
+}
+footer .footerTop .footerSocial {
+  align-self: center;
+}
+footer .footerTop .footerSocial ul {
+  display: flex;
+  list-style-type: none;
+}
+footer .footerTop .footerSocial ul li {
+  padding: 5px;
+}
+footer .footerTop .footerSocial ul li img {
+  width: 30px;
+}
+footer .footerBottom {
+  padding-bottom: 20px;
+  text-align: center;
+}

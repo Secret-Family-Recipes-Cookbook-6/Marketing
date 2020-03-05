@@ -1,0 +1,36 @@
+.flex(@direction, @wrap, @justify, @align: stretch) {
+	display: flex;
+	align-items: @align;
+	justify-content: @justify;
+	flex-direction: @direction;
+	flex-wrap: @wrap;
+}
+
+.width-height(@width, @height) {
+	width: @width;
+	height: @height;
+}
+
+.minWidth-minHeight(@width, @height) {
+	min-width: @width;
+	min-height: @height;
+}
+
+.minWidth-maxWidth(@minWidth, @maxWidth) {
+	min-width: @minWidth;
+	max-width: @maxWidth;
+}
+
+.opacity(@start, @finish) {
+	from {
+		opacity: @start;
+	}
+	to {
+		opacity: @finish;
+	}
+}
+
+.backgroundColor-color(@background, @color) {
+	background: @background;
+	color: @color;
+}
