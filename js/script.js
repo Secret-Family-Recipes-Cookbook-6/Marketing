@@ -7,11 +7,14 @@ const menuBarOne = document.querySelector('#spanOne');
 const menuBarTwo = document.querySelector('#spanTwo');
 const reviewCard = document.querySelectorAll('.testimonialsCard');
 const testimonials = document.querySelector('.testimonials');
-
+const favicon = document.querySelector('.favicon')
 // hide nav on tablet + phone view
 if (window.innerWidth < 800) {
   nav.classList.add('hide');
 }
+
+favicon.href = `./media/png/favicon-${Math.floor(Math.random() * (7 - 1) + 1)}.png`
+console.log(favicon);
 
 // toggle menuIcon + hide nav if window.width < 800
 window.addEventListener('resize', function () {
