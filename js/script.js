@@ -58,11 +58,12 @@ window.addEventListener('scroll', function () {
 
 console.log("hi", window.location.pathname);
 // Disable this event listener on index.html
-if (window.location.pathname === '/Marketing/about.html') {
+if (window.location.pathname === '/Marketing/about.html' || window.location.pathname === '/about.html') {
 
   // display professional profile links on team image hover
   for (let i = 0; i < aboutUsCard.length; i++) {
     socialLinks[i].addEventListener('mouseenter', function () {
+      console.log("entered");
       socialLinks[i].style = 'opacity: 1; transition: opacity 200ms linear';
     })
     socialLinks[i].addEventListener('mouseleave', function () {
