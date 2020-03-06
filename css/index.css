@@ -203,6 +203,12 @@ header .header-container h1 {
     font-size: 3rem;
   }
 }
+header .header-container .teamLink a {
+  color: #dad5be;
+}
+header .header-container .teamLink:hover a {
+  color: #07080a;
+}
 header nav {
   position: absolute;
   background-color: #fff;
@@ -479,6 +485,12 @@ header .menuIcon {
 }
 .main-content .cta .teamLink {
   margin-top: 10px;
+}
+.main-content .cta .teamLink a {
+  color: #dad5be;
+}
+.main-content .cta .teamLink:hover a {
+  color: #07080a !important;
 }
 @keyframes opacity {
   from {
